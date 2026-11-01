@@ -7,9 +7,29 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  /* rem följer användarens grundinställda textstorlek och skalar därför bättre än px. */
+  font-size: 1rem;
+  line-height: 1.6;
   color: #222222;
   background-color: #fffaf3;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+  line-height: 1.2;
+  color: #3b2418;
+}
+
+h1,
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 header {
@@ -19,6 +39,7 @@ header {
 }
 
 header h1 {
+  color: #ffffff;
   margin: 0 0 8px;
 }
 
@@ -30,6 +51,14 @@ nav ul {
 
 nav a {
   color: #ffffff;
+}
+
+a {
+  color: #8c1010;
+}
+
+a:hover {
+  color: #5e0a0a;
 }
 
 main {
@@ -65,18 +94,87 @@ article img,
   border: 0;
   border-radius: 6px;
   text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.knapp:hover {
+  background-color: #6f0c0c;
+  color: #ffffff;
+}
+
+.pris {
+  color: #8c1010;
+  font-weight: 700;
+}
+
+#hero {
+  background-color: #f3e3cf;
+  padding: 32px;
+}
+
+#hero p {
+  font-size: 1.125rem;
+}
+
+.falt {
+  margin-bottom: 16px;
+}
+
+form label,
+legend {
+  font-weight: 700;
+}
+
+.falt input,
+.falt select,
+.falt textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #8a7a6a;
+  border-radius: 4px;
+  font: inherit;
+}
+
+fieldset {
+  margin: 0 0 16px;
+  padding: 16px;
+}
+
+.val {
+  margin-bottom: 8px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #8c1010;
+}
+
+:focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
 }
 
 footer {
   background-color: #2b1c14;
   color: #ffffff;
-  padding: 24px;
+  padding: 16px 24px;
 }
 
 footer a {
   color: #ffffff;
 }
 
+header a:hover,
+footer a:hover {
+  color: #ffffff;
+}
+
 address {
   font-style: normal;
 }
+
+/* Kontrast: #222222 på #fffaf3 = 15,32:1 (krav 4,5:1 uppfyllt). */
+/* Kontrast: vit text på #8c1010 = 9,56:1 (krav 4,5:1 uppfyllt). */
+/* Kontrast: #8c1010 på #fffaf3 = 9,20:1 (krav 4,5:1 uppfyllt). */
