@@ -14,7 +14,7 @@ body {
   color: #222222;
   background-color: #fffaf3;
 }
-
+/* check på den Kontrast: #222222 på #fffaf3 = 15,32:1 (krav 4,5:1 uppfyllt). */
 h1,
 h2,
 h3 {
@@ -107,6 +107,7 @@ article img,
   color: #8c1010;
   font-weight: 700;
 }
+/* Kontrastkollen gjord: Kontrast: #8c1010 på #fffaf3 = 9,20:1 (krav 4,5:1 uppfyllt). */
 
 #hero {
   background-color: #f3e3cf;
@@ -150,6 +151,7 @@ input[type="checkbox"],
 input[type="radio"] {
   accent-color: #8c1010;
 }
+/* Kontrast: vit text på #8c1010 = 9,56:1 (krav 4,5:1 uppfyllt). */
 
 :focus-visible {
   outline: 3px solid #1a73e8;
@@ -175,6 +177,3 @@ address {
   font-style: normal;
 }
 
-/* Kontrast: #222222 på #fffaf3 = 15,32:1 (krav 4,5:1 uppfyllt). */
-/* Kontrast: vit text på #8c1010 = 9,56:1 (krav 4,5:1 uppfyllt). */
-/* Kontrast: #8c1010 på #fffaf3 = 9,20:1 (krav 4,5:1 uppfyllt). */
