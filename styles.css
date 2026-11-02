@@ -182,13 +182,13 @@ input[type="radio"] {
 
 footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 16px;
   background-color: #2b1c14;
   color: #ffffff;
   padding: 16px 24px;
-  text-align: center;
+  text-align: left;
 }
 
 footer a {
@@ -201,8 +201,8 @@ footer a:hover {
 }
 
 address {
-  
   font-style: normal;
+  text-align: right;
 }
 
 .sr-only {
